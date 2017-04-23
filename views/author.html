@@ -1,0 +1,41 @@
+
+
+
+<div  ng-controller="customersCtrl">
+<form role="form">
+<div class="form-group">
+<label >选择列表</label>
+    <select ng-change="myFunc()" ng-init="selectedName = authors[0]" ng-model="selectedName" ng-options="x for x in authors">
+    </select>
+
+
+</div>
+</form>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>作者</th>
+<th>周</th>
+<th>新增</th>
+<th>删除</th>
+<th>共计</th>
+
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="x in names">
+
+<td>{{ x.author }}</td>
+<td>{{ x.week }}</td>
+<td>{{ x.line_add }}</td>
+<td>{{ x.line_delete }}</td>
+<td>{{ x.line_all }}</td>
+</tr>
+</tbody>
+</table>
+
+
+
+    <script type="text/javascript" src="controller.js">
+        </script>
+    </div>

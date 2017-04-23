@@ -1,0 +1,19 @@
+
+
+
+<div  ng-controller="weekcontroller">
+    <form role="form">
+        <div class="form-group">
+            <label >选择列表</label>
+            <select ng-change="myFunc()" ng-init="authorselect = authors[0]" ng-model="authorselect" ng-options="x for x in authors">
+            </select>
+
+
+        </div>
+    </form>
+    <div  id="container"></div>
+
+</div>
+
+    <script type="text/javascript" src="weekselect.js">
+        </script>
